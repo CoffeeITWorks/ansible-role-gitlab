@@ -38,7 +38,6 @@ gitlab_rails['backup_path'] = "{{ gitlab_backup_path }}"
 # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/config/gitlab.yml.example#L118
 gitlab_rails['ldap_enabled'] = {{ gitlab_ldap_enabled }}
 {% if gitlab_ldap_enabled == "true" %}
-gitlab_rails['ldap_enabled'] = true
 gitlab_rails['ldap_servers'] = {
 'main' => {
   'label' => '{{ gitlab_ldap_label }}',
